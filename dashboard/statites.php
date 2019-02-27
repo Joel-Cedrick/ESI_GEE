@@ -16,14 +16,7 @@ session_start();
            or die('could not connect to database');
 
 /*
-    $matricule = $_SESSION['matricule'];
-    requete
-
-    $requete = "SELECT * FROM idesi where matricule = '".$matricule."'  ";
-    $exec_requete = mysqli_query($db,$requete);
-    $reponse      = mysqli_fetch_array($exec_requete);
-
-    echo $reponse['nom'] ;*/
+    */
 
     //taux  de reponse $filiere
     $filiere='TLC';

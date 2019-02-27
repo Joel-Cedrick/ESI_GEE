@@ -98,12 +98,13 @@
             <h1 class="h2">Taux de Reponses</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
-                
+
+               <!-- je teste le menu deroulant pour la filiere --> 
               </div>
-              <!--button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
                 <span data-feather="calendar"></span>
                 E2I
-              </button-->
+              </button>
             </div>
           </div>
 

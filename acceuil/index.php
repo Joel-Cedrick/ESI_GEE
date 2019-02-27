@@ -148,15 +148,18 @@
 	  <div class="col-md-4">
           <p>Réalisé par:</p></br>
 		<ul>
-		<li>Koné abdoulaye</li>
-		<li>Koné Katiénewa yasmine</li>
-		<li>Niamienl Joel </li>
+    <li>NIAMIEN Nontonwa Joel-Cedrick </li>
+		<li>KONE abdoulaye</li>
+		<li>KONE Katiénewa yasmine</li>
+		
 		<li>OULAÏ Maneka Yves Kevin</li>
-		<li>VI LOU irié anna Marcelle</li> 
+		<li>VI Lou irié anna Marcelle</li> 
 		</ul></p></br>
 		</div>
 		<div class="col-md-3">
-		<p>Sous la direction de :</br> Prof. N'ZI Edie Camille </br> Maitre de Conference </p>
+		<p>Sous la direction de :</p>
+
+    <li> <br> Prof. N'ZI Edie Camille </br> Maitre de Conference </li> 
 		</div>
 		<div class="col-md-4">
             <p>Contacter nous :</p></br>
