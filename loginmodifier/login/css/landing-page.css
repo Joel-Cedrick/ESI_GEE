@@ -1,0 +1,45 @@
+/*body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: url("../img/bg-showcase-2.jpg") no-repeat center center;
+  position: relative;
+  background-color:transparent;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}*/
+
+body, html {
+  height: 100% ;
+  background-image:url("../img/bg.jpg");
+  
+  background-position:center ;
+  background-repeat: no-repeat ;
+  background-size:cover; 
+}
+div.container{
+  margin-top: 10%;
+  display: inline-block;
+  vertical-align: middle
+
+}
+/*.bg{
+  background-image:url("../img/bg-showcase-2.jpg");
+  height: 100% ;
+  background-position:center ;
+  background-repeat: no-repeat ;
+  background-size:cover; 
+
+}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+

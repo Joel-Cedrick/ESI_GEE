@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Statitiques des diplomes de L'Ecole superieur d'industrie</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+
+    </head>
+
+
+<body>
+
+
+<span class="row">
+<div class="text-center">
+<canvas id="graphique" width="1000" height="350"></canvas>
+</div>
+</span>
+dormir
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+        var chartdata = {
+        labels: ["2016-02-29 11:02:06", "2016-02-29 12:01:54", "2016-02-29 13:02:09", "2016-02-29 14:02:10", "2016-02-29 15:02:08", "2016-02-29 16:02:10", "2016-02-29 17:02:09"],
+        datasets: [{
+        fillColor: "rgba(7,75,234,0.5)",
+        strokeColor: "#074bea",
+        pointColor: "#fff",
+        pointStrokeColor: "#074bea",
+        data: [0, 862, 1899, 2430, 2768, 2958, 3124]
+        },
+        {
+        fillColor: "rgba(23,234,7,0.5)",
+        strokeColor: "#17ea07",
+        pointColor: "#fff",
+        pointStrokeColor: "#17ea07",
+        data: [0, 64, 128, 256, 512, 1024, 2048]
+        },
+        {
+        fillColor: "rgba(231,26,13,0.75)",
+        strokeColor: "#e71a0d",
+        pointColor: "#fff",
+        pointStrokeColor: "#e71a0d",
+        data: [0, 4200, 3000, 2000, 200, 500, 5]
+        }
+        ]
+        }
+        var chart = document.getElementById('graphique').getContext('2d');
+        new Chart(chart).Line(chartdata);
+    </script>
+</body>
+
+
+</html>

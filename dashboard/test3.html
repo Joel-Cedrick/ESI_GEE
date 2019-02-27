@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <link href="dashboard.css" rel="stylesheet">
+  <title>Chart.js exemples</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+      <title>Doughnut Chart</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+      <!-- Custom styles for this template -->
+      <link href="assets/css/navbar-fixed-top.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Chart.js</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Accueil</a></li>
+              <li><a href="#doughnut">Doughnut</a></li>
+              <li><a href="#pie">Pie</a></li>
+              <li><a href="#line">Line</a></li>
+              <li><a href="#bar">Bar</a></li>
+              <li><a href="#radar">Radar</a></li>
+              <li><a href="#polar-area">Polar Area</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://www.chartjs.org/">Site Internet du projet</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <h1>Chart.js exemples</h1>
+          <p>Chart.js est une bibliothèque Javascript permettant de créer des graphiques web. Côté technologie, la librairie se repose sur du HTML5 Canvas pour le rendu des graphes.</p>
+          <p>Les 6 types de graphiques de Chart.js sont Doughnut, Pie, Line, Bar, Radar, Polar Area.</p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="http://www.chartjs.org/docs" role="button">Voir la documentation de Chart.js &raquo;</a>
+            <a class="btn btn-lg btn-success" href="http://blog.erlem.fr/programmation/developpement-web/164-web-creer-facilement-des-graphiques-animes-avec-chart-js" role="button">Voir le tutoriel sur blog.erlem.fr &raquo;</a>
+          </p>
+          <p>
+
+          </p>
+        </div>
+
+        <!-- Row and col -->
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Doughnut chart</h2>
+            <canvas id="doughnut"/>
+          </div>
+          <div class="col-md-6">
+            <h2>Pie chart</h2>
+            <canvas id="pie"/>
+          </div>
+          <div class="col-md-12">
+            <h2>Line chart</h2>
+            <canvas id="line"/>
+          </div>
+          <div class="col-md-12">
+            <h2>Bar chart</h2>
+            <canvas id="bar"/>
+          </div>
+          <div class="col-md-6">
+            <h2>Radar chart</h2>
+            <canvas id="radar"/>
+          </div>
+          <div class="col-md-6">
+            <h2>Polar Area chart</h2>
+            <canvas id="polar-area"/>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+  /*
+   * S. doughnut chart
+   */
+
+  // doughnut chart data
+  var doughnutData = [
+  {
+    value: 300,
+    color:"#F7464A",
+    highlight: "#FF5A5E",
+    label: "Red"
+  },
+  {
+    value: 50,
+    color: "#46BFBD",
+    highlight: "#5AD3D1",
+    label: "Green"
+  },
+  {
+    value: 100,
+    color: "#FDB45C",
+    highlight: "#FFC870",
+    label: "Yellow"
+  },
+  {
+    value: 40,
+    color: "#949FB1",
+    highlight: "#A8B3C5",
+    label: "Grey"
+  },
+  {
+    value: 120,
+    color: "#4D5360",
+    highlight: "#616774",
+    label: "Dark Grey"
+  }
+  ];
+
+  // doughnut chart options
+  var doughnutOptions = {
+    responsive: true
+  }
+
+  // get doughnut chart canvas
+  var doughnut= document.getElementById("doughnut").getContext("2d");
+
+  // draw pie chart
+  new Chart(doughnut).Doughnut(doughnutData, doughnutOptions);
+
+  /*
+   * E. doughnut chart
+   */
+
+  /*
+   * S. pie chart
+   */
+
+    // pie chart data
+    var pieData = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
+    ];
+
+    // pie chart options
+    var pieOptions = {
+     responsive: true
+   }
+
+    // get pie chart canvas
+    var pie= document.getElementById("pie").getContext("2d");
+
+    // draw pie chart
+    new Chart(pie).Pie(pieData, pieOptions);
+
+  /*
+   * E. pie chart
+   */
+
+  /*
+   * S. line chart
+   */
+
+  // line chart data
+  var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+  var lineData = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+    {
+      label: "My First dataset",
+      fillColor : "rgba(220,220,220,0.2)",
+      strokeColor : "rgba(220,220,220,1)",
+      pointColor : "rgba(220,220,220,1)",
+      pointStrokeColor : "#fff",
+      pointHighlightFill : "#fff",
+      pointHighlightStroke : "rgba(220,220,220,1)",
+      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+    },
+    {
+      label: "My Second dataset",
+      fillColor : "rgba(151,187,205,0.2)",
+      strokeColor : "rgba(151,187,205,1)",
+      pointColor : "rgba(151,187,205,1)",
+      pointStrokeColor : "#fff",
+      pointHighlightFill : "#fff",
+      pointHighlightStroke : "rgba(151,187,205,1)",
+      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+    }
+    ]
+
+  }
+
+    // doughnut chart options
+    var lineOptions = {
+      responsive: true
+    }
+
+  // get line chart canvas
+  var line = document.getElementById('line').getContext('2d');
+
+  // draw line chart
+  new Chart(line).Line(lineData, lineOptions);
+
+  /*
+   * E. line chart
+   */
+
+  /*
+   * S. bar chart
+   */
+
+  // bar chart data
+  var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+  var barData = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+    {
+      fillColor : "rgba(220,220,220,0.5)",
+      strokeColor : "rgba(220,220,220,0.8)",
+      highlightFill: "rgba(220,220,220,0.75)",
+      highlightStroke: "rgba(220,220,220,1)",
+      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+    },
+    {
+      fillColor : "rgba(151,187,205,0.5)",
+      strokeColor : "rgba(151,187,205,0.8)",
+      highlightFill : "rgba(151,187,205,0.75)",
+      highlightStroke : "rgba(151,187,205,1)",
+      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+    }
+    ]
+
+  }
+
+  // doughnut chart options
+  var barOptions = {
+    responsive: true
+  }
+
+  // get bar chart canvas
+  var bar = document.getElementById('bar').getContext('2d');
+
+  // draw bar chart
+  new Chart(bar).Bar(barData, barOptions);
+
+  /*
+   * E. bar chart
+   */
+
+  /*
+   * S. radar chart
+   */
+
+            // radar chart data
+            var radarData = {
+              labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+              datasets: [
+              {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [65,59,90,81,56,55,40]
+              },
+              {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [28,48,40,19,96,27,100]
+              }
+              ]
+            };
+
+            // radar chart options
+            var radarOptions = {
+             responsive: true
+           }
+
+            // get radar chart canvas
+            var radar= document.getElementById("radar").getContext("2d");
+
+            // draw radar chart
+            new Chart(radar).Radar(radarData, radarOptions);
+
+  /*
+   * E. radar chart
+   */
+
+  /*
+   * S. polar-area chart
+   */
+
+            // polar-area chart data
+            var polarData = [
+            {
+              value: 300,
+              color:"#F7464A",
+              highlight: "#FF5A5E",
+              label: "Red"
+            },
+            {
+              value: 50,
+              color: "#46BFBD",
+              highlight: "#5AD3D1",
+              label: "Green"
+            },
+            {
+              value: 100,
+              color: "#FDB45C",
+              highlight: "#FFC870",
+              label: "Yellow"
+            },
+            {
+              value: 40,
+              color: "#949FB1",
+              highlight: "#A8B3C5",
+              label: "Grey"
+            },
+            {
+              value: 120,
+              color: "#4D5360",
+              highlight: "#616774",
+              label: "Dark Grey"
+            }
+
+            ];
+
+            // radar chart options
+            var polarOptions = {
+             responsive: true
+           }
+
+            // get radar chart canvas
+            var polar= document.getElementById("polar-area").getContext("2d");
+
+            // draw radar chart
+            new Chart(polar).PolarArea(polarData, polarOptions);
+
+  /*
+   * E. polar-area chart
+   */
+   </script>
+
+ </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>

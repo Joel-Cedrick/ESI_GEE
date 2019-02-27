@@ -1,0 +1,16 @@
+html,body {
+    height: 100%;
+    
+    background-image:url("bg.jpg");
+    
+    background-position:center ;
+    background-repeat: no-repeat ;
+    background-size:cover; 
+  }
+
+  .zeus {
+  
+    width: 100% auto;
+    max-width: 420px auto;
+    padding: 15px   auto;
+    margin: 10%  auto; }
